@@ -20,7 +20,11 @@
         <div id="styletile" style="background-image: url({{page.background-image}})" class="{{page.backgroundimage-scale}}">
           <div class="row tilehead">
             <div class="logo col-sm-12">
+            {% if page.logo != ""%}
               <img src="{{page.logo}}">
+            {% else %}
+            <h1>{{page.logotext}}</h1>
+            {% endif %}
             </div>
           </div>
           <div class="row">

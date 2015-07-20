@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html ng-app="gitstyler" ng-controller="StiletileController">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Design 3</title>
+  <meta name="description" content="Digital style tiles using Jekyll and YAML configuration
+">
+
+  <link rel="stylesheet" href="/digitalstyletile//css/main.css">
+  <link rel="canonical" href="http://lboonebah.github.io/digitalstyletile//Design3.html">
+  <link rel="alternate" type="application/rss+xml" title="Digital Style Tiles" href="http://lboonebah.github.io/digitalstyletile//feed.xml" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+  <script type="text/javascript" src="/digitalstyletile/js/ui-bootstrap-tpls-0.13.0.min.js"></script>
+
+  
+</head>
+
+
+  <body ng-class="{'active-well': settingstoggle}" style="color:white" >
+
+    <header class="fixed">
+
+  <nav class="navbar navbar-default ">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/digitalstyletile/">Digital Style Tiles</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+            
+              <li><a class="page-link" href="/digitalstyletile//Design1.html">Design 1</a></li>
+              
+          
+            
+          
+            
+              <li><a class="page-link" href="/digitalstyletile//Design2.html">Design 2</a></li>
+              
+          
+            
+          
+            
+              
+                <li class="active"><a class="page-link" href="/digitalstyletile//Design3.html">Design 3</a></li>
+              
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          <li><a ng-click="settingstoggle = !settingstoggle"><i class="glyphicon glyphicon-cog"></i> </a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+
+        
+          <link ng-if="selected_headURL" ng-href='{{selected_headURL}}' rel='stylesheet' type='text/css'>
+          <link ng-if="selected_subheadURL" ng-href='{{selected_subheadURL}}' rel='stylesheet' type='text/css'>
+        
+          <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+          <link href='' rel='stylesheet' type='text/css'>
+          <link href='' rel='stylesheet' type='text/css'>
+        <div id="styletile" style="background-image: url(images/blackboard-569260.jpg)" class="fullwidth">
+          <div class="row tilehead">
+            <div class="logo col-sm-12">
+              <img src="images/logo.png">
+            </div>
+          </div>
+          <div class="row">
+            
+            <div class="typography col-sm-6" >
+
+              <h1 class="font template">Typography</h1>
+              <div ng-show="selected_headfont">
+                
+                
+                  <h1 style="font-family:{{selected_headfont.family}}">This is a H1 Header</h1>
+                  <p class="font template">FONT: {{selected_headfont.family}}</p>
+                  <h2 style="font-family:{{selected_subheadfont.family}}">This is a H2 Sub-Header</h2>
+                  <p class="font template">FONT: {{selected_subheadfont.family}}</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                  <a href="">this is a link</a>
+                
+              </div>
+              <div ng-show="!selected_headfont">
+                <h1 style="font-family:Open Sans">This is a H1 Header</h1>
+                <p class="font template">FONT: Open Sans</p>
+                <h2 style="font-family:">This is a H2 Sub-Header</h2>
+                <p class="font template">FONT: </p>
+                <p style="font-family:">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="font template">FONT: </p>  
+                <a href="">this is a link</a>
+              </div>
+              
+              <div class="row buttons m_T2">
+                <div class="button col-md-4">
+                  <button>CTA</button>
+                  <p class="font template">FONT: </p>
+                </div>
+                <div class="button col-md-4">
+                  <button>Secondary</button>
+                  <p class="font template">FONT: </p>
+                </div>
+                <div class="button col-md-4">
+                  <button>Standard</button>
+                  <p class="font template">FONT: </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="design col-sm-6 colourlovers" >
+              <h1 class=" template">Design Elements</h1>
+              <h2 class="design template">Color Pallete</h2>
+              <div class="row colors service" ng-show="selected_colors">
+                 
+                <div class="col-sm-2" ng-repeat="swatch in selected_colors">
+                  <div class="swatch primary1" style="background-color:#{{swatch}}"></div> 
+                    <p class="template"> {{swatch}}</p>
+                </div>
+                
+                
+              </div>
+              <div class="row colors specifide"  ng-show="!selected_colors">
+                <div class="col-sm-2 ">
+                  <div class="swatch primary1" style="background-color:#ff0000"></div> 
+                    <p class="template"> #ff0000</p>
+                </div>
+                <div class="col-sm-2 ">
+                  <div class="swatch primary2" style="background-color:#0000ff"></div>
+                    <p class="template">#0000ff</p>
+                </div>
+                <div class="col-sm-2 ">
+                  <div class="swatch accent1" style="background-color:#00ff00"></div>
+                    <p class="template">#00ff00</p>
+                </div>
+                <div class="col-sm-2 ">
+                  <div class="swatch accent2" style="background-color:#ffff00"></div>
+                    <p class="template">#ffff00</p>
+                </div>
+                <div class="col-sm-2 ">
+                  <div class="swatch accent3" style="background-color:#CCCCCC"></div>
+                    <p class="template">#CCCCCC</p>
+                </div>
+              </div>
+
+              <div class="row colors">
+                <h2 class="design col-sm-12">Images/Patterns</h2>  
+                <div class="col-sm-4 "><div class=""></div></div>
+                <div class="col-sm-4 "><div class=""></div></div>
+                <div class="col-sm-4 "><div class=""></div></div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="settings-well" ng-show="settingstoggle">
+      <h2 class="template">Settings Well</h2>
+      <h3>Fonts</h3> 
+      
+      <div class="form-group template">
+        
+        <div class="dropdown" dropdown on-toggle="toggled(open)">
+          <a href class="dropdown-toggle btn btn-default" dropdown-toggle>
+            Head Font
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" ng-model="select_color">
+            
+            <li><input type="text" ng-model="searchfont"></li>
+            <li ng-repeat="font in fonts | filter: searchfont"><a href="#" ng-click="fontselect(font, 'head')">{{font.family}}</a></li>
+            
+          </ul>
+        </div>
+
+      </div>
+      <div class="form-group template">
+        <div class="dropdown" dropdown on-toggle="toggled(open)">
+          <a href class="dropdown-toggle btn btn-default" dropdown-toggle>
+            Subead Font
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" ng-model="select_color">
+            
+            <li><input type="text" ng-model="searchfont"></li>
+            <li ng-repeat="font in fonts | filter: searchfont"><a href="#" ng-click="fontselect(font, 'subhead')">{{font.family}}</a></li>
+            
+          </ul>
+        </div>
+        
+
+      </div>
+      <div class="form-group template">
+        <h3 class="pull-left">Color </h3>
+        <tabset id="colorselect">
+          <tab select="resetColors()">
+            <tab-heading >
+              <i class="glyphicon glyphicon-folder-close"></i> 
+            </tab-heading>
+            <span ng-init="color1='{color: #ff0000}'"> </span>
+            <input type="color" value="#ff0000">#ff0000<br>
+            <input type="color" value="#0000ff">#0000ff<br>
+            <input type="color" value="#00ff00">#00ff00<br>
+            <input type="color" value="#ffff00">#ffff00<br>
+            <input type="color" value="#CCCCCC">#CCCCCC<br>
+          </tab>
+          <tab>
+            <tab-heading>
+              <i class="glyphicon glyphicon-globe"></i>
+            </tab-heading>
+            
+                <h3>ColourLovers.com</h3>
+                <form>
+                  <input type="text" ng-model="query_colourlovers"><button ng-click="searchColourlovers(query_colourlovers)">Go</button>
+                </form> 
+                <ul ng-model="select_color">
+                  <li ng-repeat="color in colors"><a href="#" ng-click="colorselect(color)">{{color.title}}<br><img ng-src="{{color.imageUrl}}"></a></li>
+                </ul>
+            
+          </tab>        
+        </tabset>
+      </div>
+        
+    </div>
+  </body>
+  <script type="text/javascript">
+	
+	angular.module('gitstyler', ['ui.bootstrap'])
+	  	.controller('StiletileController', function ($scope, $http) {
+	 		$scope.settingstoggle = false;
+
+	 		$http.get('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyD_Yr_HNQMJOOzG_v6aac2W3P5rouNGXco').success(function(data){
+	 				// console.log(data.items[0])
+	 				$scope.fonts = data.items
+	 		})
+	 		
+	 		$scope.selected_headfont = null;
+	 		$scope.selected_subheadfont = {'family' : '"Open Sans"'};
+	 		$scope.selected_colors = setColor();
+	 		$scope.selected_fontURL = setFontURL();
+	 		$scope.query_colourlovers ="test";
+
+	 		function setFontURL (obj){
+
+	 			var fonturl = 'http://fonts.googleapis.com/css?family='
+	 			if (obj){
+	 				
+	 				fonturl = fonturl + obj.family
+	 				// console.log(fonturl);
+	 				
+	 			}else{
+	 				fonturl = fonturl + 'Open+Sans'
+	 			}
+	 			return fonturl;
+	 			 
+	 		};
+	 		function setColor (obj) {
+	 			var colors;
+	 			if(obj){
+	 				colors = obj;
+	 			}
+ 				else{
+ 					colors = null
+ 				}
+	 			return colors
+	 		}
+	 		 $scope.resetColors = function() {
+	 		
+	 			$scope.selected_colors = null;
+	 		}
+	 		
+	 		$scope.fontselect = function (font, loc) {
+	 			var fontobj = angular.fromJson(font);
+	 			if (loc == 'head' && !$scope.selected_headfont){
+	 				$scope.selected_headfont = fontobj;
+		 			// console.log($scope.select_headfont.family)
+		 			$scope.selected_headURL = setFontURL($scope.selected_headfont);
+		 			// console.log('test',test)
+
+	 			}else if (loc == 'subhead') {
+	 				$scope.selected_subheadfont = fontobj;
+		 			// console.log($scope.select_headfont.family)
+		 			$scope.selected_subheadURL = setFontURL($scope.selected_headfont);
+		 			// console.log('test',test)
+	 			}
+	 			
+	 		};
+	 		
+	 		$scope.colorselect = function (color){
+	 			// console.log(color);
+	 			$scope.selected_colors = color.colors;
+	 		}
+	 		$scope.searchColourlovers = function (query_colourlovers){
+	 			console.log('searchColourlovers', query_colourlovers);
+	 			$scope.query_colourlovers =query_colourlovers;
+	 		}
+	 		// console.log('headfontselect',$scope.selected_headfont, 'selectedfont', $scope.select_headfont)
+	 		var colourloverURL = 'http://www.colourlovers.com/api/palettes?&format=json&jsonCallback=JSON_CALLBACK'
+	 		
+	 		$http.jsonp(colourloverURL).success(
+	 			function(data){
+	 				$scope.colors = data;
+	 				// console.log(data)
+	 			}).error(
+	 			function(data, status, headers, config){console.log(status)});
+	 		$scope.$watch('selected_fontURL', function (newVal) {
+	 			// console.log( 'newVal', newVal  );
+	 		});
+	 		$scope.$watch('query_colourlovers', function (newVal) {
+	 			console.log( 'searchColourlovers', newVal  );
+	 		})
+	  	});
+			
+</script>
+
+</html>

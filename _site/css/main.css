@@ -13,7 +13,6 @@
   z-index: 100; }
 
 #styletile {
-  text-shadow: rgba(16, 30, 40, 0.75) 0 2px 5px;
   border: thin solid #ccc;
   padding: 60px;
   -webkit-box-shadow: 2px 2px 4px 0px #eee;

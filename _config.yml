@@ -3,7 +3,7 @@ title: Digital Style Tiles
 email: boone_leigh@bah.com
 description: > # this means to ignore newlines until "baseurl:"
   Digital style tiles using Jekyll and YAML configuration
-baseurl: "/digitalstyletile/" # the subpath of your site, e.g. /blog/
+baseurl: "/chorus_styletile/" # the subpath of your site, e.g. /blog/
 url: "http://lboonebah.github.io" # the base hostname & protocol for your site
 twitter_username: digitalstyletiles
 github_username:  lboonebah

@@ -26,7 +26,10 @@ $spacingunit:12px;
 	.page-content, .settings-well{
 		float:left;
 	}
-	.page-content{width:80%}
+	.page-content{width:80%;
+		.container {max-width:960px;}
+
+	}
 	.settings-well{
 		width:20%; 
 		padding:$spacingunit*7 $spacingunit*2 $spacingunit*2;

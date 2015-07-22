@@ -33,6 +33,8 @@
   float: left; }
 .active-well .page-content {
   width: 80%; }
+  .active-well .page-content .container {
+    max-width: 960px; }
 .active-well .settings-well {
   width: 20%;
   padding: 84px 24px 24px;
